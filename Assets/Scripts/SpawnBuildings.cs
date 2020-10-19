@@ -65,8 +65,10 @@ public class SpawnBuildings : MonoBehaviour
                     PlaceBuilding();
             }
             // Si clic droit annuler la prévisualisation de la zone de construction
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1)){
                 Destroy(currentSpawnedBuilding);
+                ClearGrid();
+            }
         }
     }
 
