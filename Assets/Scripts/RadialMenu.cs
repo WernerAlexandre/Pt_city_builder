@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class RadialMenu : MonoBehaviour
 {
@@ -34,10 +35,18 @@ public class RadialMenu : MonoBehaviour
         }
     }
 
+
     void Update(){
         if(Input.GetMouseButtonUp(1)){
             if(selected){
-                Debug.Log(selected.title + " est selectionné");
+                if(String.Equals(selected.title,"Destroy")){
+                    Debug.Log(selected.title + " est selectionné");
+                    
+                }  
+                if(String.Equals(selected.title,"Move")){
+                    Debug.Log(selected.title + " est selectionné");
+
+                }  
             }
             Destroy(gameObject);
         }

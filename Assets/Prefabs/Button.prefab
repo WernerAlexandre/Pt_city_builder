@@ -167,6 +167,7 @@ MonoBehaviour:
   icon: {fileID: 5214589353485464843}
   title: 
   myMenu: {fileID: 0}
+  speed: 8
 --- !u!114 &-3993291486803430466
 MonoBehaviour:
   m_ObjectHideFlags: 0
